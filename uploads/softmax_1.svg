@@ -27,7 +27,7 @@
 </g>
 <!-- x1 -->
 <g id="node1" class="node"><title>x1</title>
-<ellipse fill="none" stroke="#00008b" cx="34" cy="-194" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#ff0000" cx="34" cy="-194" rx="18" ry="18"/>
 </g>
 <!-- a12 -->
 <g id="node5" class="node"><title>a12</title>
@@ -55,7 +55,7 @@
 </g>
 <!-- x2 -->
 <g id="node2" class="node"><title>x2</title>
-<ellipse fill="none" stroke="#00008b" cx="34" cy="-154" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#ff0000" cx="34" cy="-154" rx="18" ry="18"/>
 </g>
 <!-- x2&#45;&#45;a12 -->
 <g id="edge4" class="edge"><title>x2&#45;&#45;a12</title>
@@ -71,7 +71,7 @@
 </g>
 <!-- x3 -->
 <g id="node3" class="node"><title>x3</title>
-<ellipse fill="none" stroke="#00008b" cx="34" cy="-114" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#ff0000" cx="34" cy="-114" rx="18" ry="18"/>
 </g>
 <!-- a42 -->
 <g id="node8" class="node"><title>a42</title>
@@ -99,7 +99,7 @@
 </g>
 <!-- x4 -->
 <g id="node4" class="node"><title>x4</title>
-<ellipse fill="none" stroke="#00008b" cx="34" cy="-74" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#ff0000" cx="34" cy="-74" rx="18" ry="18"/>
 </g>
 <!-- x4&#45;&#45;a42 -->
 <g id="edge10" class="edge"><title>x4&#45;&#45;a42</title>
@@ -115,7 +115,7 @@
 </g>
 <!-- a13 -->
 <g id="node11" class="node"><title>a13</title>
-<ellipse fill="none" stroke="#ee0000" cx="184" cy="-194" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#cd0000" cx="184" cy="-194" rx="18" ry="18"/>
 </g>
 <!-- a12&#45;&#45;a13 -->
 <g id="edge13" class="edge"><title>a12&#45;&#45;a13</title>
@@ -123,7 +123,7 @@
 </g>
 <!-- a23 -->
 <g id="node12" class="node"><title>a23</title>
-<ellipse fill="none" stroke="#ee0000" cx="184" cy="-154" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#cd0000" cx="184" cy="-154" rx="18" ry="18"/>
 </g>
 <!-- a12&#45;&#45;a23 -->
 <g id="edge16" class="edge"><title>a12&#45;&#45;a23</title>
@@ -147,7 +147,7 @@
 </g>
 <!-- a33 -->
 <g id="node13" class="node"><title>a33</title>
-<ellipse fill="none" stroke="#ee0000" cx="184" cy="-114" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#cd0000" cx="184" cy="-114" rx="18" ry="18"/>
 </g>
 <!-- a42&#45;&#45;a33 -->
 <g id="edge19" class="edge"><title>a42&#45;&#45;a33</title>
@@ -155,7 +155,7 @@
 </g>
 <!-- a43 -->
 <g id="node14" class="node"><title>a43</title>
-<ellipse fill="none" stroke="#ee0000" cx="184" cy="-74" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#cd0000" cx="184" cy="-74" rx="18" ry="18"/>
 </g>
 <!-- a42&#45;&#45;a43 -->
 <g id="edge22" class="edge"><title>a42&#45;&#45;a43</title>
@@ -179,7 +179,7 @@
 </g>
 <!-- O1 -->
 <g id="node15" class="node"><title>O1</title>
-<ellipse fill="none" stroke="#4eee94" cx="257" cy="-94" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#43cd80" cx="257" cy="-94" rx="18" ry="18"/>
 </g>
 <!-- a13&#45;&#45;O1 -->
 <g id="edge25" class="edge"><title>a13&#45;&#45;O1</title>
@@ -187,7 +187,7 @@
 </g>
 <!-- O2 -->
 <g id="node16" class="node"><title>O2</title>
-<ellipse fill="none" stroke="#4eee94" cx="257" cy="-174" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#43cd80" cx="257" cy="-174" rx="18" ry="18"/>
 </g>
 <!-- a13&#45;&#45;O2 -->
 <g id="edge29" class="edge"><title>a13&#45;&#45;O2</title>
@@ -195,7 +195,7 @@
 </g>
 <!-- O3 -->
 <g id="node17" class="node"><title>O3</title>
-<ellipse fill="none" stroke="#4eee94" cx="257" cy="-134" rx="18" ry="18"/>
+<ellipse fill="none" stroke="#43cd80" cx="257" cy="-134" rx="18" ry="18"/>
 </g>
 <!-- a13&#45;&#45;O3 -->
 <g id="edge33" class="edge"><title>a13&#45;&#45;O3</title>
