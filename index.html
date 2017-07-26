@@ -325,12 +325,13 @@
 
       
         
-          
-            <p>最近在用<a href="https://research.fb.com/downloads/fasttext/" target="_blank" rel="external">fasttext</a>做文本分类的实验，有n个已经训练好的fasttext模型，想法是构建一个两层的分类器，底层是之前训练的模型，上层是一个Softmax Regression模型，合并底层模型的输出作为上层的输入（感觉类似stacking结构）。</p>
-<p><img src="/uploads/softmax_1.svg" alt="example" title="一个例子：同时将softmax激活函数用在了Score层和Output层，图中包含两个独立的fasttext模型"></p>
-<p>如图所示，Input、Hidden、Score是原来fasttext模型的结构，之后又加上一个以softmax为激活函数的Output层。因为是有监督的训练模型，原本fasttext模型的Score层就使用了一次softmax激活函数，之后Output层又使用了一次，所以在用BP算法结合随机梯度下降训练时，涉及到了softmax用于隐层的更新方法。与一般的激活函数（sigmoid、tanh…）稍有不同，每个元素经过softmax激活函数时，都涉及到同层的其它所有元素，所以计算Score层的误差时更复杂一点。</p>
-
-          
+          <p>最近在用<a href="https://research.fb.com/downloads/fasttext/">fasttext</a>做文本分类的实验，有n个已经训练好的fasttext模型，想法是构建一个两层的分类器，底层是之前训练的模型，上层是一个Softmax Regression模型，合并底层模型的输出作为上层的输入（感觉类似stacking结构）。</p>
+<p><img src="/uploads/softmax_1.svg" alt="example" title="一个例子：同时将softmax激活函数用在了Score层和Output层"></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/07/26/softmax用在神经网络的隐层/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
