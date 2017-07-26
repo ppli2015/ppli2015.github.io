@@ -103,19 +103,22 @@
 
 
 <meta name="description" content="最近在用fasttext做文本分类的实验，有n个已经训练好的fasttext模型，想法是构建一个两层的分类器，底层是之前训练的模型，上层是一个Softmax Regression模型，合并底层模型的输出作为上层的输入（感觉类似stacking结构）。
-如图所示，Input、Hidden、Score是原来fasttext模型的结构，之后又加上一个以softmax为激活函数的Output层。因为是有监">
+
+如图所示，Input、Hidden、Score是原来fasttext模型的结构，之后又加上一个以softmax为激活函数的Output层。因为是有">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Softmax用在神经网络的隐层">
 <meta property="og:url" content="http://yoursite.com/2017/07/26/softmax用在神经网络的隐层/index.html">
 <meta property="og:site_name" content="Pepe's Dream">
 <meta property="og:description" content="最近在用fasttext做文本分类的实验，有n个已经训练好的fasttext模型，想法是构建一个两层的分类器，底层是之前训练的模型，上层是一个Softmax Regression模型，合并底层模型的输出作为上层的输入（感觉类似stacking结构）。
-如图所示，Input、Hidden、Score是原来fasttext模型的结构，之后又加上一个以softmax为激活函数的Output层。因为是有监">
+
+如图所示，Input、Hidden、Score是原来fasttext模型的结构，之后又加上一个以softmax为激活函数的Output层。因为是有">
 <meta property="og:image" content="http://yoursite.com/uploads/softmax_1.svg">
-<meta property="og:updated_time" content="2017-07-26T12:42:41.000Z">
+<meta property="og:updated_time" content="2017-07-26T12:46:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Softmax用在神经网络的隐层">
 <meta name="twitter:description" content="最近在用fasttext做文本分类的实验，有n个已经训练好的fasttext模型，想法是构建一个两层的分类器，底层是之前训练的模型，上层是一个Softmax Regression模型，合并底层模型的输出作为上层的输入（感觉类似stacking结构）。
-如图所示，Input、Hidden、Score是原来fasttext模型的结构，之后又加上一个以softmax为激活函数的Output层。因为是有监">
+
+如图所示，Input、Hidden、Score是原来fasttext模型的结构，之后又加上一个以softmax为激活函数的Output层。因为是有">
 <meta name="twitter:image" content="http://yoursite.com/uploads/softmax_1.svg">
 
 
@@ -325,7 +328,8 @@
       
 
       
-        <p>最近在用<a href="https://research.fb.com/downloads/fasttext/" target="_blank" rel="external">fasttext</a>做文本分类的实验，有n个已经训练好的fasttext模型，想法是构建一个两层的分类器，底层是之前训练的模型，上层是一个Softmax Regression模型，合并底层模型的输出作为上层的输入（感觉类似stacking结构）。<br><img src="/uploads/softmax_1.svg" alt="example" title="一个例子：同时将softmax激活函数用在了Score层和Output层"></p>
+        <p>最近在用<a href="https://research.fb.com/downloads/fasttext/" target="_blank" rel="external">fasttext</a>做文本分类的实验，有n个已经训练好的fasttext模型，想法是构建一个两层的分类器，底层是之前训练的模型，上层是一个Softmax Regression模型，合并底层模型的输出作为上层的输入（感觉类似stacking结构）。</p>
+<p><img src="/uploads/softmax_1.svg" alt="example" title="一个例子：同时将softmax激活函数用在了Score层和Output层，图中包含两个独立的fasttext模型"></p>
 <p>如图所示，Input、Hidden、Score是原来fasttext模型的结构，之后又加上一个以softmax为激活函数的Output层。因为是有监督的训练模型，原本fasttext模型的Score层就使用了一次softmax激活函数，之后Output层又使用了一次，所以在用BP算法结合随机梯度下降训练时，涉及到了softmax用于隐层的更新方法。与一般的激活函数（sigmoid、tanh…）稍有不同，每个元素经过softmax激活函数时，都涉及到同层的其它所有元素，所以计算Score层的误差时更复杂一点。</p>
 
       
