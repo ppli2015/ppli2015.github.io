@@ -327,6 +327,7 @@
         
           <p>最近在用<a href="https://research.fb.com/downloads/fasttext/">fasttext</a>做文本分类的实验，有n个已经训练好的fasttext模型，想法是构建一个两层的分类器，底层是之前训练的模型，上层是一个Softmax Regression模型，合并底层模型的输出作为上层的输入（感觉类似stacking结构）。</p>
 <p><img src="/uploads/softmax_1.svg" alt="example" title="一个例子：同时将softmax激活函数用在了Score层和Output层"></p>
+<p>如上图所示，图中包含两个独立的fasttext模型，分别含有2个Input单元、3个Hidden单元、2个Score单元，之后又加上一个以softmax为激活函数的Output层。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2017/07/26/softmax用在神经网络的隐层/#more" rel="contents">
               Read more &raquo;
@@ -1451,7 +1452,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
