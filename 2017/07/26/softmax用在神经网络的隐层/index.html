@@ -113,7 +113,7 @@
 
 如上图所示，图中包含两个独立的fasttext模型，分别含有2个Input单元、3个Hidden单元、2个Score单元，之后又加上一个以soft">
 <meta property="og:image" content="http://yoursite.com/uploads/softmax_1.svg">
-<meta property="og:updated_time" content="2017-07-27T03:49:16.000Z">
+<meta property="og:updated_time" content="2017-07-27T03:51:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Softmax用在神经网络的隐层">
 <meta name="twitter:description" content="最近在用fasttext做文本分类的实验，有n个已经训练好的fasttext模型，想法是构建一个两层的分类器，底层是之前训练的模型，上层是一个Softmax Regression模型，合并底层模型的输出作为上层的输入（感觉类似stacking结构）。
@@ -332,7 +332,6 @@
 <p><img src="/uploads/softmax_1.svg" alt="example" title="一个例子：同时将softmax激活函数用在了Score层和Output层"></p>
 <p>如上图所示，图中包含两个独立的fasttext模型，分别含有2个Input单元、3个Hidden单元、2个Score单元，之后又加上一个以softmax为激活函数的Output层。<br><a id="more"></a><br>因为是有监督的训练模型，原本fasttext模型的Score层就使用了一次softmax激活函数，之后Output层又使用了一次，所以在用BP算法结合随机梯度下降训练时，涉及到了softmax用于隐层的更新方法。与一般的激活函数（sigmoid、tanh…）稍有不同，每个元素经过softmax激活函数时，都涉及到同层的其它所有元素，所以计算Score层的误差和权重更新的梯度时更复杂一点。</p>
 <p>softmax公式：\(y_{i}=g(Z_{i})=\frac{e^{Z_{i}}}{\sum_{j=1}^{n} e^{Z_{j}}}\)</p>
-<p>具体来说，输出层的误差，即交叉熵损失函数对Output层的未经过softmax的元素\(Zo_{k}\)的导数，为\(\delta^{Output}_{k}=pred_{k}-label_{k}\)。Score层的误差，即交叉熵损失函数对Score层的未经过softmax的元素\(Zs\)的导数，为\(\delta^{Score}=(\theta^{Score-Output})^{T}\delta^{Output} .<em> g’(Zs)\)。重点在于</em>点乘<em>上softmax的导数\(g’(Zs)\)。<br>当\(i = j\)时，\(\frac{\partial y_{i}}{\partial z_{i}}=y_{i}(1-y_{i})\)；<br>当\(i \neq j\)时，\(\frac{\partial y_{i}}{\partial z_{j}}=-y_{i}y_{j}\)。<br>于是\(\delta^{Score}_{k}=\sum_{j=1}^{n} \theta^{Score-Output})^{T}\delta^{Output} .</em> \frac{\partial y_{k}}{\partial z_{j}}\)。</p>
 <p>参考资料：</p>
 <ol>
 <li><a href="http://www.jianshu.com/p/8eb17fa41164" target="_blank" rel="external">Softmax分类函数</a></li>
